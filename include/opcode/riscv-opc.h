@@ -21,6 +21,10 @@
 #ifndef RISCV_ENCODING_H
 #define RISCV_ENCODING_H
 /* Instruction opcode macros.  */
+//custom instructoins
+#define MATCH_CNTB 0x3b
+#define MASK_CNTB  0xfe00707f
+//custom instruction
 #define MATCH_SLLI_RV32 0x1013
 #define MASK_SLLI_RV32  0xfe00707f
 #define MATCH_SRLI_RV32 0x5013
@@ -2628,6 +2632,8 @@ DECLARE_INSN(hsv_b, MATCH_HSV_B, MASK_HSV_B)
 DECLARE_INSN(hsv_h, MATCH_HSV_H, MASK_HSV_H)
 DECLARE_INSN(hsv_w, MATCH_HSV_W, MASK_HSV_W)
 DECLARE_INSN(hsv_d, MATCH_HSV_D, MASK_HSV_D)
+// custom instructiton
+DECLARE_INSN(cntb, MATCH_ADD, MASK_ADD)
 #endif /* DECLARE_INSN */
 #ifdef DECLARE_CSR
 /* Privileged CSRs.  */
