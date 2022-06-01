@@ -22,8 +22,10 @@
 #define RISCV_ENCODING_H
 /* Instruction opcode macros.  */
 //custom instructoins
-#define MATCH_CNTB 0x3b
-#define MASK_CNTB  0xfe00707f
+//#define MATCH_CNTB 0x3b
+//#define MASK_CNTB  0xfe00707f
+#define MATCH_CNTB 0x200006b
+#define MASK_CNTB 0xfe00707f
 //custom instruction
 #define MATCH_SLLI_RV32 0x1013
 #define MASK_SLLI_RV32  0xfe00707f
