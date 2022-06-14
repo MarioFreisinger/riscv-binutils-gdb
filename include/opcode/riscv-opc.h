@@ -26,6 +26,15 @@
 //#define MASK_CNTB  0xfe00707f
 #define MATCH_CNTB 0x200006b
 #define MASK_CNTB 0xfe00707f
+
+//#define MATCH_FMADD_Q 0x6000043
+//#define MASK_FMADD_Q  0x600007f
+
+#define MATCH_WBITS 0x200006f
+#define MASK_WBITS 0x0
+
+//#define MATCH_WBITS 0x600006f
+//#define MASK_WBITS 0x600707f
 //custom instruction
 #define MATCH_SLLI_RV32 0x1013
 #define MASK_SLLI_RV32  0xfe00707f
@@ -2636,6 +2645,8 @@ DECLARE_INSN(hsv_w, MATCH_HSV_W, MASK_HSV_W)
 DECLARE_INSN(hsv_d, MATCH_HSV_D, MASK_HSV_D)
 // custom instructiton
 DECLARE_INSN(cntb, MATCH_CNTB, MASK_CNTB)
+DECLARE_INSN(wbits, MATCH_WBITS, MASK_WBITS)
+
 #endif /* DECLARE_INSN */
 #ifdef DECLARE_CSR
 /* Privileged CSRs.  */

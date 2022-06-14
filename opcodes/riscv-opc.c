@@ -465,6 +465,8 @@ const struct riscv_opcode riscv_opcodes[] =
 {"subw",       64, INSN_CLASS_I, "d,s,t",     MATCH_SUBW, MASK_SUBW, match_opcode, 0 },
 //{"cntb",         0, INSN_CLASS_C, "",   MATCH_CNTB, MASK_CNTB, opcode_match, 0 },
 {"cntb",         0, INSN_CLASS_I, "d,s,t",     MATCH_CNTB, MASK_CNTB, match_opcode, 0 },
+// WBITS 4 source registers
+{"wbits",         0, INSN_CLASS_I, "d,s,t",     MATCH_WBITS, MASK_WBITS, match_opcode, 0 },
   
 /* Atomic memory operation instruction subset.  */
 {"lr.w",            0, INSN_CLASS_A, "d,0(s)",   MATCH_LR_W, MASK_LR_W|MASK_AQRL, match_opcode, INSN_DREF|INSN_4_BYTE },
