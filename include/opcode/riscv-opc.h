@@ -30,8 +30,9 @@
 //#define MATCH_FMADD_Q 0x6000043
 //#define MASK_FMADD_Q  0x600007f
 
-#define MATCH_WBITS 0x200006f
-#define MASK_WBITS 0x0
+//to do change opcode 0x7 is flw for floating point extension
+#define MATCH_WBITS 0x2000007
+#define MASK_WBITS 0xfe00707f
 
 //#define MATCH_WBITS 0x600006f
 //#define MASK_WBITS 0x600707f
